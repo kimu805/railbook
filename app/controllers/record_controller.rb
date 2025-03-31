@@ -110,7 +110,7 @@ class RecordController < ApplicationController
   end
 
   def groupby
-    @books = Book.select('publisher, SUM(price) AS avg_price').group(:publisher)
+    @books = Book.select('publisher, AVG(price) AS avg_price').group(:publisher)
   end
 
   def havingby
