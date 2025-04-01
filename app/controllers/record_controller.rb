@@ -303,7 +303,7 @@ class RecordController < ApplicationController
           title: 'Rails 7ポケットリファレンス',
           price: 2580, publisher: '技術評論社', published: '2017-04-17'})
         b1.save!
-        raise '例外発生：処理はキャンセルされました。'
+        # raise '例外発生：処理はキャンセルされました。'
         b2 = Book.new({isbn: '978-4-297-13062-7',
           title: 'Rubyポケットリファレンス',
           price: 2500, publisher: '技術評論社', published: '2024-09-10'})
