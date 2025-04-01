@@ -323,7 +323,7 @@ class RecordController < ApplicationController
 
   def enum_rec
     @review = Review.find(1)
-    @review.published!
+    @review.deleted!
     # @review.status = 1
     # @review.status = :published
 
