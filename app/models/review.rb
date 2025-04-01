@@ -2,6 +2,7 @@ class Review < ApplicationRecord
   encrypts :body
 
   # enum status: { draft:0, published:1, deleted:2 }
+  enum status: { draft: 0, published: 1, deleted: 2 }
   # enum status: [:draft, :published, :deleted]
 
   belongs_to :book
